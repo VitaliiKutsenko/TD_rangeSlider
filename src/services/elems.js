@@ -1,0 +1,5 @@
+export const inputs = document.querySelectorAll('.rangeBar input')
+export const numInputs = document.querySelectorAll('.numInput input')
+export const progress = document.querySelector('.slider .progress')
+export const submitButton = document.querySelector('.slider .progress')
+export const formElem = document.querySelector('#form')

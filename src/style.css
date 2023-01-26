@@ -1,0 +1,78 @@
+@import './css/normalize.css';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ #root{
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     background: tomato;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ form{
+     background: white;
+     padding: 20px;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 1px 1px 1px 1px black;
+ }
+
+ .numInput input {
+     padding: 5px;
+     margin: 5px;
+     border-radius: 10px;
+     outline: none;
+     border:1px solid black;
+ }
+
+.slider{
+    margin-top: 20px;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #ddd;
+    position: relative;
+}
+
+.slider .progress{
+    height: 5px;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background: green;
+}
+
+ .rangeBar{
+     position: relative;
+     width: 100%;
+     top: -5px;
+ }
+
+.rangeBar input{
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+    pointer-events: none;
+}
+input[type='range']::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    pointer-events: auto;
+}
+input[type='submit']{
+    margin-top: 20px;
+}
